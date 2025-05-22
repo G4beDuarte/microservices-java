@@ -1,4 +1,4 @@
-CREATE TABLE tb_product (
+CREATE TABLE IF NOT EXISTS tb_product (
     id serial NOT NULL,
     description_product varchar(100) NOT NULL,
     brand_product varchar(255) NOT NULL,
