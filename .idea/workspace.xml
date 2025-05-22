@@ -5,8 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="567e9857-298e-4e17-b28e-45a1610c68b2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/greating-service/src/main/java/br/edu/atitus/greating_service/GreatingController.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/currency-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currency-service/src/main/java/br/edu/atitus/currency_service/controllers/CurrencyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currency-service/src/main/java/br/edu/atitus/currency_service/entities/CurrencyEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currency-service/src/main/java/br/edu/atitus/currency_service/repositories/CurrencyRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currency-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currency-service/src/main/resources/db_migration/V1__CreateTableTbCurrency.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currency-service/src/main/resources/db_migration/V2__PopulatTableTbCurrency.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery-service/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery-service/src/main/java/br/edu/atitus/discovery_service/DiscoveryServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/greating-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/greating-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/greating-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/greating-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/br/edu/atitus/product_service/clients/CurrencyClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/br/edu/atitus/product_service/clients/CurrencyClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-currency/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/currency-service/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-currency/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/currency-service/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-currency/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/currency-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-currency/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/currency-service/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-currency/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/currency-service/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-currency/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-currency/src/main/java/com/example/service_currency/ServiceCurrencyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/currency-service/src/main/java/br/edu/atitus/currency_service/CurrencyServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-currency/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-currency/src/test/java/com/example/service_currency/ServiceCurrencyApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-service/src/test/java/br/edu/atitus/discovery_service/DiscoveryServiceApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,24 +65,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.ConfigServiceApplication.executor": "Run",
-    "Application.GreatingServiceApplication.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/gabrielduarte/Área de Trabalho/Faculdade/3º semestre/Luciano/microservices-java",
-    "onboarding.tips.debug.path": "/home/gabrielduarte/Área de Trabalho/Faculdade/3º semestre/Luciano/microservices-java/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.ConfigServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GreatingServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/gabrielduarte/Área de Trabalho/Faculdade/3º semestre/Luciano/microservices-java/greating-service&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/home/gabrielduarte/Área de Trabalho/Faculdade/3º semestre/Luciano/microservices-java/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected="Application.GreatingServiceApplication">
     <configuration name="ConfigServiceApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.edu.atitus.config_service.ConfigServiceApplication" />
+      <module name="microservices-java" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="br.edu.atitus.config_service.*" />
@@ -66,6 +96,7 @@
     </configuration>
     <configuration name="GreatingServiceApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.edu.atitus.greating_service.GreatingServiceApplication" />
+      <module name="microservices-java" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="br.edu.atitus.greating_service.*" />
@@ -76,51 +107,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="microservices-java" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="microservices-java" />
-      <option name="filePath" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <module name="microservices-java" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="Tox" factoryName="Tox">
-      <module name="microservices-java" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <method v="2" />
-    </configuration>
+    <list>
+      <item itemvalue="Application.ConfigServiceApplication" />
+      <item itemvalue="Application.GreatingServiceApplication" />
+    </list>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

@@ -1,13 +1,13 @@
-package com.example.service_currency;
+package br.edu.atitus.currency_service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ServiceCurrencyApplication {
+public class CurrencyServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ServiceCurrencyApplication.class, args);
+		SpringApplication.run(CurrencyServiceApplication.class, args);
 	}
 
 }
