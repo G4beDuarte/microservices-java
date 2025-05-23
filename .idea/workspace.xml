@@ -5,37 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="567e9857-298e-4e17-b28e-45a1610c68b2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/currency-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/currency-service/src/main/java/br/edu/atitus/currency_service/controllers/CurrencyController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/currency-service/src/main/java/br/edu/atitus/currency_service/entities/CurrencyEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/currency-service/src/main/java/br/edu/atitus/currency_service/repositories/CurrencyRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/currency-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/currency-service/src/main/resources/db_migration/V1__CreateTableTbCurrency.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/currency-service/src/main/resources/db_migration/V2__PopulatTableTbCurrency.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discovery-service/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discovery-service/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discovery-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discovery-service/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discovery-service/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discovery-service/src/main/java/br/edu/atitus/discovery_service/DiscoveryServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discovery-service/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/greating-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/greating-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/greating-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/greating-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/br/edu/atitus/product_service/clients/CurrencyClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/br/edu/atitus/product_service/clients/CurrencyClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-currency/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/currency-service/.gitattributes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-currency/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/currency-service/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-currency/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/currency-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-currency/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/currency-service/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-currency/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/currency-service/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-currency/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-currency/src/main/java/com/example/service_currency/ServiceCurrencyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/currency-service/src/main/java/br/edu/atitus/currency_service/CurrencyServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-currency/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-currency/src/test/java/com/example/service_currency/ServiceCurrencyApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-service/src/test/java/br/edu/atitus/discovery_service/DiscoveryServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/currency-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency-service/src/main/java/br/edu/atitus/currency_service/CurrencyServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/currency-service/src/main/java/br/edu/atitus/currency_service/CurrencyServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency-service/src/main/java/br/edu/atitus/currency_service/controllers/CurrencyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/currency-service/src/main/java/br/edu/atitus/currency_service/controllers/CurrencyController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
