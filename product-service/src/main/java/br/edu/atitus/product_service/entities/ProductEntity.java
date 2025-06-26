@@ -1,11 +1,6 @@
 package br.edu.atitus.product_service.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
-import jakarta.persistence.Transient;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "tb_product")
@@ -20,6 +15,9 @@ public class ProductEntity {
 	private double price_product;
 	private String currency_product;
 	private Integer stock_product;
+
+	@Column(name = "image_url")
+	private String imageUrl;
 	
 	@Transient
 	private String enviroment;
@@ -80,7 +78,12 @@ public class ProductEntity {
 	public void setConvertedPrice(double convertedPrice) {
 		this.convertedPrice = convertedPrice;
 	}
-	
-	
 
+	public String getImageUrl() {
+		return imageUrl;
+	}
+
+	public void setImageUrl(String imageUrl) {
+		this.imageUrl = imageUrl;
+	}
 }
