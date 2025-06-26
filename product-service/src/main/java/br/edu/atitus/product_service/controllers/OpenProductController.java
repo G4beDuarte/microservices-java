@@ -4,6 +4,10 @@ import br.edu.atitus.product_service.clients.CurrencyClient;
 import br.edu.atitus.product_service.clients.CurrencyResponse;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.CacheManager;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -65,5 +69,29 @@ public class OpenProductController {
 			product.setEnviroment("Product-service running on Port: " + port + " - DataSource: cache");
 		}
 			return ResponseEntity.ok(product);
+		}
+
+		@GetMapping("/noconverter/{idProduct}")
+		public ResponseEntity<ProductEntity> getNoConverter(@PathVariable Long idProduct) throws Exception {
+			var product = repository.findById(idProduct).orElseThrow(() -> new Exception("Produto não encontrado"));
+			product.setConvertedPrice(-1);
+			product.setEnviroment("Product-service running on Port: " + port);
+			return ResponseEntity.ok(product);
+		}
+
+		@GetMapping("/{targetCurrency}")
+		public  ResponseEntity<Page<ProductEntity>> getAllProducts(
+				@PathVariable String targetCurrency,
+				@PageableDefault(page = 0, size = 5, sort = "description", direction = Sort.Direction.ASC)
+					Pageable pageable) throws Exception {
+			Page<ProductEntity> products = repository.findAll(pageable);
+			for (ProductEntity product : products){
+				CurrencyResponse currency = currencyClient.getCurrency(product.getPrice(),product.getCurrency(),targetCurrency);
+
+				product.setConvertedPrice(currency.getConvertedValue());
+				// Setar ambiente
+				product.setEnviroment("Product-Service running on port: " + port + " - " + currency.getEnviroment()); // + " - " + cambio.getAmbiente());
+			}
+			return  ResponseEntity.ok(products);
 		}
 	}
